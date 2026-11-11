@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hung Liang's Resume</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><path fill=%22%23000%22 d=%22M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z%22/></svg>">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <style>
-/* Backbone CSS for Resume Template 1 */
+  <title>My Resume</title>
+  <style>/* Backbone CSS for Resume Template 1 */
 
 /* Basic */
 
@@ -91,6 +88,14 @@
 
 /* SVG & Images */
 
+#vue-smart-pages-preview span.iconify,
+#vue-smart-pages-preview iconify-icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+}
+
+#vue-smart-pages-preview iconify-icon,
 #vue-smart-pages-preview svg.iconify {
   vertical-align: -0.2em;
 }
@@ -152,105 +157,75 @@
   }
 }
 
-    /* Dynamic Styles */
-    body {
-      font-family: Tahoma, HKST;
-      font-size: 12px;
-      background-color: #f5f5f5;
-      color: black;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    
-    #vue-smart-pages-preview {
-      background-color: white;
-      width: 793px;
-      max-width: 100%;
-      padding: 41px 37px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-    }
-    
-    :not(.resume-header-item) > a {
-      color: #000000;
-    }
-    
-    h1, h2, h3 {
-      color: #000000;
-    }
-    
-    h1, h2 {
-      border-bottom-color: #000000;
-    }
-    
-    p, li {
-      line-height: 1.30;
-    }
-    
-    h2, h3 {
-      line-height: 1.50;
-    }
-    
-    dl {
-      line-height: 1.35;
-    }
-    
-    h2 {
-      margin-top: 5px;
-    }
-    
-    @media print {
       body {
+        background-color: #f5f5f5;
+        color: black;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      main {
         background-color: white;
-        padding: 0;
-        margin: 0;
+        width: 793px;
+        max-width: 100%;
+        padding: 45px 48px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
       }
-      
-      #vue-smart-pages-preview {
-        width: 100%;
-        max-width: none;
-        box-shadow: none;
-        margin: 0;
-        padding: 41px 37px;
+      #vue-smart-pages-preview { font-family: Tahoma, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "Yu Gothic", "Meiryo", "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans JP", "Noto Sans KR", "WenQuanYi Micro Hei", "Droid Sans Fallback", sans-serif }#vue-smart-pages-preview { font-size: 12px }#vue-smart-pages-preview :not(.resume-header-item) > a { color: #000000 }#vue-smart-pages-preview h1, #vue-smart-pages-preview h2, #vue-smart-pages-preview h3 { color: #000000 }#vue-smart-pages-preview h1, #vue-smart-pages-preview h2 { border-bottom-color: #000000 }#vue-smart-pages-preview h2 { margin-top: 5px }#vue-smart-pages-preview p, #vue-smart-pages-preview li { line-height: 1.30 }#vue-smart-pages-preview h2, #vue-smart-pages-preview h3 { line-height: 1.50 }#vue-smart-pages-preview dl { line-height: 1.35 }
+      @media print {
+        body { background-color: white; padding: 0; margin: 0; }
+        main {
+          width: 100%;
+          max-width: none;
+          box-shadow: none;
+          margin: 0;
+          padding: 45px 48px;
+        }
+        @page { size: A4; margin: 0; }
       }
-      
-      @page {
-        size: A4;
-        margin: 0;
-      }
-    }
-  
-  </style>
+    </style>
 </head>
-<body>
-  <main id="vue-smart-pages-preview">
-<div class="resume-header"></div><div style="text-align: center;">
+<body><main id="vue-smart-pages-preview" class="markdown-resume"><div class="resume-header"></div><div style="text-align: center;">
 <h1>Hung Liang</h1>
-<p><span class="iconify" data-icon="ic:outline-location-on"></span> Taiwan | <span class="iconify" data-icon="tabler:brand-github"></span> <a href="https://github.com/Hung-Liang" target="_blank" rel="noopener">github.com/Hung-Liang</a> | <span class="iconify" data-icon="tabler:brand-linkedin"></span> <a href="https://www.linkedin.com/in/hung-liang/" target="_blank" rel="noopener">linkedin.com/in/hung-liang</a> | <span class="iconify" data-icon="tabler:mail"></span> <a href="mailto:hung@bobing.dev">hung@bobing.dev</a></p>
+<p><iconify-icon icon="ic:outline-location-on"></iconify-icon> Taiwan | <iconify-icon icon="tabler:brand-github"></iconify-icon> <a href="https://github.com/Hung-Liang" target="_blank" rel="noopener">github.com/Hung-Liang</a> | <iconify-icon icon="tabler:brand-linkedin"></iconify-icon> <a href="https://www.linkedin.com/in/hung-liang/" target="_blank" rel="noopener">linkedin.com/in/hung-liang</a> | <iconify-icon icon="tabler:mail"></iconify-icon> <a href="mailto:hung@bobing.dev">hung@bobing.dev</a></p>
 </div>
 <h2>Summary</h2>
-<p>Experienced software and DevOps engineer with a focus on backend development, security automation, and infrastructure integration. Built API-driven security testing platforms and multi-service internal tools using Python, FastAPI, Flask, Docker, and Robot Framework, integrated with GitLab CI/CD pipelines. Skilled in designing modular backend systems with PostgreSQL, MongoDB, and Redis, and deploying containerized services behind Nginx reverse proxies. Committed to delivering secure, scalable, and maintainable internal systems.</p>
+<p>Software engineer focused on CI/CD, containerized infrastructure, and security test automation in on-premises environments. Set up GitLab CI/CD with automated build and deployment across 8 internal projects and built Docker-based internal platforms behind Nginx. Skilled in backend services with Python, FastAPI, PostgreSQL, and MongoDB.</p>
 <h2>Experience</h2>
 <dl>
 <dt><strong>Software Engineer</strong></dt>
 <dd><strong>Super Micro Computer, Inc.</strong></dd>
 <dd><strong>Nov 2021 - Present</strong></dd>
 </dl>
-<p>Managed backend development, infrastructure automation, and security testing integration. Architected multiple internal platforms to streamline firmware validation and hardware data synchronization.<br><br></p>
 <ul>
 <li>
-<p><strong>BMC Penetration Testing Automation:</strong> Built a Robot Framework-based automated security testing platform targeting BMC devices. Implemented a dual-protocol HTTP client handling CGI and Redfish login flows, multi-token session management, and dynamic CSRF extraction. Designed a multi-stage Docker environment with CI/CD pipeline integration, migrating from Jenkins to GitLab Runner to improve maintainability; built resilience mechanisms including IPMI recursive retry and Redfish fallback.</p>
+<p><strong>CI/CD Adoption:</strong> Set up GitLab CI/CD with automated build and deployment for 8 internal projects used by two teams, converting the earliest ones from a six-step manual release (scp, SSH, pull, build, start, Nginx restart) to push-to-deploy. Added automated deployments for test builds, and helped a teammate containerize and onboard another project.</p>
 </li>
 <li>
-<p><strong>Test Orchestration &amp; Automation Service:</strong> Architected a two-tier orchestration system using Flask and Gunicorn. Implemented non-blocking test dispatch with per-job filesystem state and MongoDB-backed unique ID generation. Integrated Nessus REST API orchestration, automated Hyper-V VM snapshot restore via remote PowerShell, and report generation with SMTP delivery.</p>
+<p><strong>Test Environment Containerization:</strong> Migrated the BMC security testing pipeline from Jenkins to GitLab Runner. Replaced a test environment that took about 20 minutes to deploy and needed cleanup after every run with disposable containers built from multi-stage Docker images.</p>
 </li>
 <li>
-<p><strong>Product Specification Search Platform:</strong> Developed a FastAPI backend with PostgreSQL-based weighted fuzzy search using pg_trgm and JSONB-based filters. Built a parallel async crawler using asyncio.gather and httpx to fetch and deduplicate product specs, with rate-limit-aware retries, MongoDB batch fallback, and bulk PostgreSQL UPSERT.</p>
+<p><strong>Internal Multi-Service Platform:</strong> Built and maintained a Docker Compose backend of six FastAPI services behind an Nginx API gateway with map-based dynamic upstream routing, deployed through GitLab CI with a pre-flight consistency check. Implemented firmware extraction and a Cybellum report aggregation pipeline producing DOCX/PDF reports.</p>
 </li>
 <li>
-<p><strong>Internal Multi-Service Platform:</strong> Built and maintained a Docker Compose multi-container backend exposing a unified API gateway via Nginx map-based dynamic upstream routing. Implemented firmware extraction and a Cybellum report aggregation pipeline combining various inputs into branded DOCX/PDF reports with MongoDB GridFS persistence.</p>
+<p><strong>Local LLM Infrastructure:</strong> Deployed and maintained self-hosted LLM inference for automated GitLab MR code review, and designed a Qdrant vector search system with incremental sync for private knowledge base retrieval.</p>
+</li>
+<li>
+<p><strong>BMC Penetration Testing Automation:</strong> Built a Robot Framework-based security regression platform with 800+ test cases across five firmware branches, covering about 80% of known BMC security issues. Implemented a dual-protocol HTTP client for CGI and Redfish login flows with dynamic CSRF extraction, IPMI retry, and Redfish fallback.</p>
+</li>
+<li>
+<p><strong>Test Orchestration &amp; Automation Service:</strong> Architected a two-tier Flask and Gunicorn orchestration system that lets testers trigger test runs remotely, integrating Nessus REST API scans, automated Hyper-V VM snapshot restore via remote PowerShell, and emailed reports.</p>
+</li>
+<li>
+<p><strong>Vulnerability Issue Filing Automation:</strong> Built a tool that parses vulnerability scanner exports and creates or updates 500-1,000 issues per run through Selenium on a legacy internal issue tracker with no API, finishing in about 5 hours unattended versus an estimated 10 minutes per issue by hand.</p>
+</li>
+<li>
+<p><strong>Go Backend Service:</strong> Developed a new backend service in Go and ported a Python recursive lookup (walking a component hierarchy from system level down to individual cables) to it, cutting runtime from over 3 minutes to under 10 seconds.</p>
+</li>
+<li>
+<p><strong>Product Specification Search Platform:</strong> Developed a FastAPI backend with PostgreSQL weighted fuzzy search (pg_trgm, JSONB filters) and a parallel async crawler that syncs product specs weekly, with pytest integration tests running in GitLab CI.</p>
 </li>
 </ul>
 <dl>
@@ -263,50 +238,39 @@
 </ul>
 <h2>Projects</h2>
 <dl>
-<dt><strong>Idle Exile</strong></dt>
-<dd><strong>Automated ARPG Simulation Web App</strong></dd>
+<dt><strong>Vaultwarden Zero-Trust Infrastructure</strong></dt>
+<dd><strong>Self-Hosted Password Manager Hardening</strong></dd>
 </dl>
 <ul>
-<li>Developed a high-level idle ARPG utilizing <strong>React, TypeScript, and Vite</strong>, simulating core growth systems similar to <em>Path of Exile</em>.</li>
-<li>Implemented complex mechanics including automated combat, randomized gear generation, visual talent trees, and offline progress calculations.</li>
+<li>Integrated Vaultwarden with Cloudflare Tunnel and OTP authentication on a VPS, eliminating all public inbound ports.</li>
+<li>Combined update monitoring with Watchtower, offsite encrypted backups to an R2 bucket, and rate limiting into a single security pipeline; validated end-to-end via full disaster-recovery restore testing.</li>
 </ul>
 <dl>
-<dt><strong>YouTube &amp; Twitch Notifier</strong></dt>
-<dd><strong>Cross-platform Live Stream Alerts</strong></dd>
+<dt><strong>Anki Telegram Bot</strong></dt>
+<dd><strong>Japanese Vocabulary Capture Bot</strong></dd>
 </dl>
 <ul>
-<li>Engineered a notification system supporting <strong>YouTube and Twitch</strong> using <strong>Python and APScheduler</strong>, dispatching real-time alerts via Telegram/Discord Webhooks.</li>
-<li>Integrated third-party APIs including YouTube v3 and Twitch API to monitor channel status and video uploads with automated background polling.</li>
-</ul>
-<dl>
-<dt><strong>Hung Recipes</strong></dt>
-<dd><strong>PWA Recipe Management System</strong></dd>
-</dl>
-<ul>
-<li>Built a modern recipe manager using <strong>Vanilla JavaScript and Tailwind CSS</strong>, featuring smart search, multi-dimensional tag filtering, and PWA offline access.</li>
-<li>Developed automated <strong>Python</strong> scripts to organize recipe data into indexed JSON formats for efficient client-side consumption.</li>
+<li>Built a Python Telegram bot that tokenizes Japanese input, looks up dictionary entries, and writes flashcards into Anki, syncing to other devices through a self-hosted Anki sync server.</li>
+<li>Containerized with Docker and a container health check; designed graceful shutdown and write/sync locking with retries, with unit and integration tests running in GitHub Actions.</li>
 </ul>
 <h2>Education</h2>
 <dl>
-<dt><strong>Master's Degree of Computer Science</strong></dt>
+<dt><strong>Master's Degree in Computer Science</strong></dt>
 <dd><strong>Feb 2020 - Sep 2021</strong></dd>
 <dd>Tamkang University, Taiwan</dd>
 </dl>
 <dl>
-<dt><strong>Bachelor's Degree of Computer Science</strong></dt>
+<dt><strong>Bachelor's Degree in Computer Science</strong></dt>
 <dd><strong>Sep 2014 - Jul 2019</strong></dd>
 <dd>Tamkang University, Taiwan</dd>
 </dl>
 <h2>Skills</h2>
-<p><strong>Programming Languages:</strong> Python, Golang, JavaScript, Bash, Shell Scripting</p>
+<p><strong>DevOps &amp; Infrastructure:</strong> Docker, Docker Compose, GitLab CI/CD, GitHub Actions, Jenkins, Nginx, Gunicorn, Hyper-V, Cloudflare Tunnel, Grafana, Linux</p>
+<p><strong>Programming Languages:</strong> Python, Go (Golang), Bash, PowerShell</p>
 <p><strong>Frameworks &amp; APIs:</strong> FastAPI, Flask, RESTful APIs, Robot Framework, SQLAlchemy, Pydantic</p>
-<p><strong>Security &amp; Testing:</strong> Penetration Testing (BMC/Redfish/CGI), Nessus, IPMI, Selenium, Paramiko</p>
-<p><strong>DevOps &amp; Infrastructure:</strong> Docker, Docker Compose, Jenkins, GitLab CI/CD, Nginx, Gunicorn, Linux</p>
-<p><strong>Databases &amp; Storage:</strong> PostgreSQL (pg_trgm, JSONB), MongoDB (Motor, GridFS), Redis</p>
-<p><strong>AI-Assisted Development</strong>: Cursor, Gemini CLI, Antigravity; experienced in designing agent instruction files and applying human-in-the-loop review workflows</p>
-<h2>Languages</h2>
-<p><strong>Mandarin:</strong> Native | <strong>English:</strong> Fluent</p>
-
-  </main>
-</body>
+<p><strong>Security &amp; Testing:</strong> Penetration Testing (BMC/Redfish/CGI), Nessus, IPMI, Selenium, Paramiko, pytest</p>
+<p><strong>Databases &amp; Storage:</strong> PostgreSQL (pg_trgm, JSONB), MongoDB (Motor, GridFS), Redis, Qdrant</p>
+<p><strong>AI-Assisted Development:</strong> Claude Code, Cursor; agent instruction file design and human-in-the-loop review workflows</p>
+<p><strong>Languages:</strong> Mandarin (Native), English (Fluent)</p>
+</main></body>
 </html>
